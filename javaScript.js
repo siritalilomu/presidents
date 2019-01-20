@@ -1,3 +1,4 @@
+// this is my data
 const data = { 
     "us_presidents":
     [
@@ -17,6 +18,7 @@ const data = {
     ]
 }
 
+// when my screen load hide all presidents
 const load = () => {
     hideAll()
 }
@@ -32,12 +34,14 @@ hideAll = () => {
     newCard.innerHTML = ''
 }
 
+// click on see all button to display all presidents
 seeAllButton.addEventListener('click', (e) => {
     hideAll()
     console.log('fire see all')
     loadFacts()
 })
 
+// click on random button to randomly pick a president and display it
 seeRandomButton.addEventListener('click', (e) => {
     hideAll()
     let num = Math.floor(Math.random() * data.us_presidents.length); 
@@ -68,6 +72,9 @@ seeRandomButton.addEventListener('click', (e) => {
     
 })
 
+// when the show button is clicked get the first and last name
+// that was in the input box and see if that is in my data
+// if so display it on the screen if not than dont
 showButton.addEventListener('click', (e) => {
     
     hideAll()
@@ -114,7 +121,7 @@ showButton.addEventListener('click', (e) => {
     
 })
 
-
+// get my data object and loop through it and dynamicly create a card for each one
 loadFacts = () => {
     console.log('fire loadfacts')
     for( let i = 0; i < data.us_presidents.length; i++ ) {

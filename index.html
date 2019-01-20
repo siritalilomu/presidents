@@ -17,33 +17,34 @@
     </head>
 
     <body>
+        <!-- create a container to put stuff in -->
         <div class="container">
+            <!-- create a h1 tag to put the title of my site in and align it to the center -->
             <h1 style="text-align: center; padding: 1.5rem;">Weird Facts about U.S. Presidents</h1>
+            <!-- create a row inside my container so it is easier to style -->
             <div class="row">
+                <!-- create a column inside my row so i can style the columns -->
                 <div class="col" style="display: flex;">
+                    <!-- create a button so when clicked display all presidents with facts -->
                     <button id="see-all" type="button" class="btn btn-outline-primary btn-lg">See All Facts</button>
+                    <!-- create a button so when clicked randomaly pick a president and display it -->
                     <button id="see-random" type="button" class="btn btn-outline-info btn-lg">See Random Fact</button>
+                    <!-- create input field to enter first name and last name of president -->
                     <span class="input-group">
                         <input id="fname" type="text" class="form-control" placeholder="President First Name" style="height: 5rem !important;">
                         <input id="lname" type="text" class="form-control" placeholder="President Last Name" style="height: 5rem !important;">
+                        <!-- create a button when clicked it'll go find the president with that name and display it on the screen -->
                         <button id="show" class="btn btn-success" type="button">Go</button>
                     </span>
                 </div>
             </div>    
         </div>
+        <!-- create a container to display the presidents  -->
         <div class="container">
-            <div id="new-card" class="row">
-                <!-- <div class="col-auto">
-                    <div class="card" style="width: 21rem;">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Gilbert_Stuart_Williamstown_Portrait_of_George_Washington.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">George Washington</h5>
-                            <p class="card-text">George Washington had only one real tooth. His other teeth were other people and animal’s teeth.</p>
-                        </div>
-                    </div>
-                </div> -->
-            </div>
+            <!-- create a div with id that i can refrence in javaScript to dynamicly create and display my data -->
+            <div id="new-card" class="row"></div>
         </div>
+
         <!-- javaScript -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
